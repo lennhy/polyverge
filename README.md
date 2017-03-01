@@ -1,2 +1,3 @@
 # Polyverge Website
-# UI for displaying projects
+
+## UI for displaying projects
