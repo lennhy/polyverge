@@ -4,37 +4,117 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A Design and Web Development Agency that creates projects outside the verge of convention.">
+    <meta name="description" content="On the verge of the unconventional.">
     <meta name="author" content="POLYVERGE">
     <title>POLYVERGE</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
   </head>
   <body>
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> M <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="#">
-              <img src="http://placehold.it/150x50&text=Logo" alt="">
-            </a>
+    <!--  Start of navigation bar-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WebSiteName</a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+                <li><a href="#">Page 1-3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
-</nav>
-  <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+  </nav>
+  <!--  End of navigation bar-->
+
+  <!-- Start of header -->
+  <header>
+    <div class="jumbotron text-center">
+      <h1 class="page-header">Polyverge</h1>
+    </div>
+    <div class="jumbotron text-center">
+      <!-- <h2 class="page-header">Projects</h1> -->
+      <h2 class="desciption">On the verge of the unconventional.</h2>
+    </div>
+  </header>
+  <!-- End of header -->
+
+      <!--  Start of row-->
+      <div class="row center">
+           <div class="col-lg-3 col-md-4 col-xs-6 ">
+               <a class="thumb" href="#">
+                   <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+               </a>
+           </div>
+           <div class="col-lg-3 col-md-4 col-xs-6 ">
+               <a class="thumb" href="#">
+                   <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+               </a>
+           </div>
+           <div class="col-lg-3 col-md-4 col-xs-6 ">
+               <a class="thumb" href="#">
+                   <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+               </a>
+           </div>
+           <div class="col-lg-3 col-md-4 col-xs-6 ">
+               <a class="thumb" href="#">
+                   <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+               </a>
+           </div>
+      </div>
+      <!--  End of row-->
+
+      <!-- <div class="row">
+           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+               <a class="" href="#">
+                   <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+               </a>
+           </div>
+           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+               <a class="" href="#">
+                   <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+               </a>
+           </div>
+           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+               <a class="" href="#">
+                   <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+               </a>
+           </div>
+           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+               <a class="" href="#">
+                   <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+               </a>
+           </div>
+      </div> -->
+      <div class="jumbotron"></div>
+      <footer class="footer">
+        <div class="container">
+          <ul class="list-inline">
+          <li class="text-muted">Made with love by Ninja Squad</p>
+          <li class="text-muted">© Polyverge 2017</p>
+          </ul>
+        </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
   </body>
 </html>
