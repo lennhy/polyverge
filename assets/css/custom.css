@@ -7,23 +7,20 @@ body{
 }
 
 
-/*HEADERS*/
+/*----------------------HEADERS*/
 
 /*text*/
  h1, h2{
   color: #fff;
 }
-
 h1.page-header{
   text-transform: uppercase;
   font-size: 10em;
   border: none;
 }
-
 .jumbotron h1{
   color: #fff;
 }
-
 .jumbotron{
   margin: 0;
   background: transparent;
@@ -31,7 +28,7 @@ h1.page-header{
 }
 
 
-/*BOX*/
+/*---------------------------BOX*/
 
 .center{
   width: 100%;
@@ -39,7 +36,7 @@ h1.page-header{
 }
 
 
-/*NAV*/
+/*------------------------------NAV*/
 
 nav.navbar.navbar-inverse {
   background-color: transparent;
@@ -67,15 +64,37 @@ nav .navbar-collapse{
 }*/
 
 
-/*IMG*/
-
+/*--------------------------------IMG*/
+.text:hover{
+  visibility: visible;
+}
+div.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 20px 0 20px 0;
+  width: 300px;
+  height: 300px;
+  background: red;
+  object-fit: contain;
+}
+div.img-container .text:hover{
+  visibility: visible;
+}
 img.img-responsive{
-  /*height: 300px;*/
   margin: 0;
   padding: 0;
+  z-index: 1;
+}
+img {
+  flex-shrink: 0;
+  min-width: 140%;
+  min-height: 100%
+   /*height: auto;*/
 }
 
-/*FOOTER*/
+/*-----------------------------FOOTER*/
 
 footer.footer{
   text-align: center;
