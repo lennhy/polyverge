@@ -6,9 +6,7 @@ body{
   margin: 0;
 }
 
-
 /*----------------------HEADERS*/
-
 /*text*/
  h1, h2{
   color: #fff;
@@ -17,6 +15,10 @@ h1.page-header{
   text-transform: uppercase;
   font-size: 10em;
   border: none;
+}
+h2.description{
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 .jumbotron h1{
   color: #fff;
@@ -27,17 +29,31 @@ h1.page-header{
   padding: 100px;
 }
 
-
-/*---------------------------BOX*/
-
+/**/
+div.arrow-down{
+  width: 0;
+  height: 0;
+  margin-top: 100px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+p.instructions{
+  width: 300px;
+  height:auto;
+  margin-top: 100px;
+  margin: 0 auto;
+  font-size: .75em;
+  display: block;
+  color:#fff;
+}
+/*---------------------------CUSTOM ATTRIBUTES*/
 .center{
   width: 100%;
   margin: 0 auto;
 }
 
-
 /*------------------------------NAV*/
-
 nav.navbar.navbar-inverse {
   background-color: transparent;
     border-radius: 0;
@@ -65,6 +81,10 @@ nav .navbar-collapse{
 
 
 /*--------------------------------IMG*/
+a.navbar-brand > img{
+  width:50px;
+  height: auto;
+}
 div.text{
   text-align: center;
   /*position: absolute;*/
@@ -84,7 +104,7 @@ div.img-container {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 20px 0 0px 0;
+  margin: 20px 0 0 0;
   width: 300px;
   height: 300px;
   background: red;
@@ -100,16 +120,12 @@ img.img-responsive{
   margin: 0;
   padding: 0;
   z-index: 1;
-}
-img {
   flex-shrink: 0;
   min-width: 140%;
   min-height: 100%
-   /*height: auto;*/
 }
 
 /*-----------------------------FOOTER*/
-
 footer.footer{
   text-align: center;
   width: 100%;
