@@ -4,6 +4,7 @@ body{
   width: 100%;
   height: auto;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /*----------------------HEADERS*/
@@ -81,23 +82,57 @@ nav .navbar-collapse{
 
 
 /*--------------------------------IMG*/
+a span.glyphicon-menu-down{
+  margin-top: 125px;
+  color: #fff;
+  position: relative;
+}
+a span.glyphicon {
+    color: #fff;
+}
 a.navbar-brand > img{
   width:50px;
   height: auto;
 }
-div.text{
+div.img-outer-text{
   text-align: center;
   /*position: absolute;*/
+  font-size: 1.25em;
   width: 300px;
   height: auto;
-  padding: 10px;
+  padding: 20px;
   background: rgb(239, 27, 11);
   color: #fff;
-  visibility: visible;
   z-index: 99999;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+
 }
-div.text:hover{
+div.img-inner-text{
+  text-align: center;
+  width: 300px;
+  height: auto;
+  padding-top: 100px;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+}
+ li a{
+  color: #fff;
+}
+div.img-container .see-more-text{
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+div.img-container:hover .see-more-text{
   visibility: visible;
+  z-index: 1;
 }
 div.img-container {
   display: flex;
@@ -123,6 +158,12 @@ img.img-responsive{
   flex-shrink: 0;
   min-width: 140%;
   min-height: 100%
+}
+
+/*------------------------------ANIMATIONS*/
+.animated.infinite{
+  webkit-animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 /*-----------------------------FOOTER*/
