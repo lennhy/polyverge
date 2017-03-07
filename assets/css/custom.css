@@ -1,5 +1,5 @@
 body{
-  background: #333;
+  background: rgb(10,10,10);
   margin: 0 auto;
   width: 100%;
   height: auto;
@@ -7,7 +7,7 @@ body{
   overflow-x: hidden;
 }
 
-/*----------------------HEADERS*/
+/*----------------------HEADER*/
 /*text*/
  h1, h2{
   color: #fff;
@@ -62,30 +62,11 @@ p.instructions{
 
 /*------------------------------NAV*/
 nav.navbar.navbar-inverse {
-  background-color: transparent;
+  background: transparent;
     border-radius: 0;
     border: none;
     margin-bottom:0;
   }
-
-/*nav.navbar navbar-default  {
-    margin-bottom: 0px;
-    background: transparent;
-}
-
-nav .navbar-collapse{
-  margin: 0px;
-  padding: 0px;
-  line-height: 0;
-}
-
-.navbar-brand img{
-  float: none;
-  line-height: none;
-  margin: 0px;
-  padding: 0px;
-}*/
-
 
 /*--------------------------------IMG*/
 a span.glyphicon-menu-down{
@@ -94,8 +75,9 @@ a span.glyphicon-menu-down{
   position: relative;
 }
 
-a span.glyphicon {
-    color: #fff;
+a span.glyphicon-new-window {
+  margin-left: 10px;
+  /*color: #777;*/
 }
 
 a.navbar-brand > img{
@@ -105,17 +87,35 @@ a.navbar-brand > img{
 
 div.img-outer-text{
   text-align: center;
-  /*position: absolute;*/
   font-size: 1em;
   width: 300px;
   height: auto;
-  padding: 20px;
-  background:#333;
-  color: #fff;
+  padding: 10px;
+  background: rgb(18,18,18);
+  box-shadow: 1px 1px 5px #000;
+  color: #777;
   z-index: 99999;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
 
+}
+
+div.img-outer-text span.divider{
+  /*border-right: 2px solid rgba(255,40,13,1);*/
+  border-right: 2px solid #777;
+  margin: 0 10px 0 10px;
+}
+/*#777*/
+ul.list-inline{
+  padding:10px 10px 0 10px;
+}
+ul.list-inline a{
+  /*color: rgba(255,40,13,1);*/
+  color: #777;
+}
+ul.list-inline a:hover{
+  color: rgba(255,40,13,1);
+  text-decoration: none;
 }
  li a{
   color: #fff;
