@@ -252,12 +252,24 @@ footer.footer{
 
 @media only screen and (max-width: 640px) {
 
-  div.col-lg-3 col-md-4 col-xs-6 div.img-container {
-    width: 10px;
-    float: left;
+
+  /* |1| <<<<<<<<<<<<<<<<<  CONTAINERS  >>>>>>>>>>>>>>>>>> */
+
+  /* Fill the whole screen */
+  div.col-lg-3.col-md-4.col-xs-6 {
+    width: 100%;
     display: block;
-    clear: both ;
   }
+  /* Make all children centered */
+  div.col-lg-3.col-md-4.col-xs-6 * {
+    margin: 0 auto;
+  }
+  div.col-lg-3.col-md-4.col-xs-6{
+    margin-bottom: 20px;
+  }
+
+
+  /* |8| <<<<<<<<<<<<<<<<<<<<<<<<<<<  IMAGE GALLERY CONTAINERS >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
   div.img-outer-text, img.img-responsive{
     display: block;
