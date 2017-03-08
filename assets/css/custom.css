@@ -1,3 +1,4 @@
+/*CONTAINERS*/
 body{
   background: rgb(10,10,10);
   margin: 0 auto;
@@ -5,36 +6,54 @@ body{
   height: auto;
   margin: 0;
   overflow-x: hidden;
+  font-size: 16px;
 }
-
-/*----------------------HEADER*/
-/*text*/
- h1, h2{
-  color: #fff;
-}
-
-h1.page-header{
-  text-transform: uppercase;
-  font-size: 10em;
-  border: none;
-}
-
-h2.description{
-  text-transform: uppercase;
-  font-size: 1.5em;
-}
-
 .jumbotron h1{
   color: #fff;
 }
-
 .jumbotron{
   margin: 0;
   background: transparent;
   padding: 100px;
 }
+.jumbotron .hidden, .jumbotron .visible{
+  float: center;
+  position: relative;
+}
 
-/**/
+/*HEADERS*/
+ h1, h2{
+  color: #fff;
+}
+h1.page-header{
+  text-transform: uppercase;
+  font-size: 10em;
+  border: none;
+}
+h2.description{
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+/*LISTS*/
+ul.list-inline{
+  padding:10px 10px 0 10px;
+}
+ul.list-inline a{
+  color: #777;
+}
+ul.list-inline a:hover{
+  color: rgba(255,40,13,1);
+  text-decoration: none;
+}
+ li a{
+  color: #fff;
+}
+li.read-more:hover{
+  cursor: pointer;
+}
+
+/*IMAGE ICONS*/
 div.arrow-down{
   width: 0;
   height: 0;
@@ -42,6 +61,14 @@ div.arrow-down{
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #fff;
+}
+a span.glyphicon-menu-down{
+  margin-top: 125px;
+  color: #fff;
+  position: relative;
+}
+a span.glyphicon-new-window {
+  margin-left: 10px;
 }
 
 p.instructions{
@@ -54,40 +81,36 @@ p.instructions{
   color:#fff;
 }
 
-/*---------------------------CUSTOM ATTRIBUTES*/
+/*GLOBAL STYLES*/
 .center{
   width: 100%;
   margin: 0 auto;
 }
-
-/*------------------------------NAV*/
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.full-width{
+  width: 100%;
+}
+/*NAVIGATION*/
 nav.navbar.navbar-inverse {
   background: transparent;
-    border-radius: 0;
-    border: none;
-    margin-bottom:0;
-  }
-
-/*--------------------------------IMG*/
-a span.glyphicon-menu-down{
-  margin-top: 125px;
-  color: #fff;
-  position: relative;
+  border-radius: 0;
+  border: none;
+  margin-bottom:0;
 }
 
-a span.glyphicon-new-window {
-  margin-left: 10px;
-  /*color: #777;*/
-}
-
+/*IMAGE GALLERY*/
 a.navbar-brand > img{
   width:50px;
   height: auto;
 }
-
 div.img-outer-text{
   text-align: center;
-  font-size: 1em;
+  font-size: .75em;
   width: 300px;
   height: auto;
   padding: 10px;
@@ -97,30 +120,11 @@ div.img-outer-text{
   z-index: 99999;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-
 }
-
 div.img-outer-text span.divider{
-  /*border-right: 2px solid rgba(255,40,13,1);*/
   border-right: 2px solid #777;
   margin: 0 10px 0 10px;
 }
-/*#777*/
-ul.list-inline{
-  padding:10px 10px 0 10px;
-}
-ul.list-inline a{
-  /*color: rgba(255,40,13,1);*/
-  color: #777;
-}
-ul.list-inline a:hover{
-  color: rgba(255,40,13,1);
-  text-decoration: none;
-}
- li a{
-  color: #fff;
-}
-
 div.img-container {
   display: flex;
   justify-content: center;
@@ -131,7 +135,6 @@ div.img-container {
   height: 300px;
   object-fit: contain;
 }
-
 .img-title-description{
   display: none;
   width: 300px;
@@ -142,29 +145,22 @@ div.img-container {
   color: #fff;
   z-index: 1;
 }
-
 div.img-container .img-title-description p{
-  font-size: 1.25em;
+  font-size: 1em;
 }
-
 div.img-container:hover .img-title-description{
   display: block;
   cursor: pointer;
 }
-
-
 .img-title-description{
   padding: 70px 30px 100px 30px;
 }
-
 .img-title-description:hover {
   background:rgba(255,40,13,.7);
 }
-
 div.img-container .text:hover{
   visibility: visible;
 }
-
 img.img-responsive{
   margin: 0;
   padding: 0;
@@ -174,15 +170,16 @@ img.img-responsive{
   min-height: 100%
 }
 
-/*------------------------------ANIMATIONS*/
+/*ANIMATIONS*/
 .animated.infinite{
   webkit-animation-duration: 4s;
   animation-duration: 4s;
 }
 
-/*-----------------------------FOOTER*/
+/*FOOTER*/
 footer.footer{
   text-align: center;
   width: 100%;
   margin: 20px auto;
+  font-size: .65em;
 }
