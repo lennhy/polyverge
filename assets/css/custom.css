@@ -16,9 +16,36 @@ body{
   background: transparent;
   padding: 100px;
 }
-.jumbotron .hidden, .jumbotron .visible{
+.jumbotron.visible{
   float: center;
   position: relative;
+  background: rgb(18,18,18);
+  box-shadow: 1px 1px 5px #000;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/*GLOBAL STYLES*/
+.center{
+  width: 100%;
+  margin: 0 auto;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.full-width{
+  width: 100%;
+}
+
+/*NAVIGATION*/
+nav.navbar.navbar-inverse {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  margin-bottom:0;
 }
 
 /*HEADERS*/
@@ -70,7 +97,16 @@ a span.glyphicon-menu-down{
 a span.glyphicon-new-window {
   margin-left: 10px;
 }
-
+span.glyphicon-remove{
+  position: absolute;
+  right: 0;
+  top:0;
+  padding: 20px;
+}
+span.glyphicon-remove:hover{
+  color:rgb(255,40,13);
+  cursor: pointer;
+}
 p.instructions{
   width: 300px;
   height:auto;
@@ -81,27 +117,6 @@ p.instructions{
   color:#fff;
 }
 
-/*GLOBAL STYLES*/
-.center{
-  width: 100%;
-  margin: 0 auto;
-}
-.hidden{
-  display: none;
-}
-.visible{
-  display: block;
-}
-.full-width{
-  width: 100%;
-}
-/*NAVIGATION*/
-nav.navbar.navbar-inverse {
-  background: transparent;
-  border-radius: 0;
-  border: none;
-  margin-bottom:0;
-}
 
 /*IMAGE GALLERY*/
 a.navbar-brand > img{
@@ -118,8 +133,8 @@ div.img-outer-text{
   box-shadow: 1px 1px 5px #000;
   color: #777;
   z-index: 99999;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 div.img-outer-text span.divider{
   border-right: 2px solid #777;
