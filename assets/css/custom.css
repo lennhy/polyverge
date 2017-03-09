@@ -16,9 +16,7 @@ body{
   margin: 0;
   overflow-x: hidden;
   font-size: 16px;
-}
-.jumbotron h1{
-  color: #fff;
+  letter-spacing: .05em;
 }
 .jumbotron{
   margin: 0;
@@ -26,8 +24,14 @@ body{
   padding: 100px;
 }
 .jumbotron.visible{
-  position: relative;
+  position: absolute;
+  top:0;
+  right:0;
+  width: 75%;
+  position: absolute;
+  z-index: 9999999;
   background: rgb(18,18,18);
+  height: 400px;
   box-shadow: 1px 1px 5px #000;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -41,17 +45,34 @@ body{
   margin: 0 auto;
 }
 .hidden{
-  display: none;
+  /*visibility: hidden;*/
+  opacity: 0;
+  -webkit-animation-name: closein;
+  -webkit-animation-duration: .45s;
+  -webkit-animation-timing-function: ease-in-out;
+  /* Standard syntax */
+  animation-name: closein;
+  animation-duration: .45s;
+  animation-timing-function: ease-in-out;
 }
 .visible{
-  display: block;
+  /* Safari 4.0 - 8.0 */
+  opacity: 1;
+  -webkit-animation-name: open;
+  -webkit-animation-duration: .45s;
+  -webkit-animation-timing-function: ease-in-out;
+  /* Standard syntax */
+  animation-name: open;
+  animation-duration: .45s;
+  animation-timing-function: ease-in-out;
+  /*visibility: visible;*/
 }
-.full-width{
+.full-width-absolute{
   width: 100%;
+  position: absolute;
+  /*bottom:0;*/
 }
-.no-width{
-  width: 0;
-}
+
 
 /* |3| <<<<<<<<<<<<<<<<<<  NAVIGATION  >>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -80,6 +101,15 @@ h2.description{
 
 /* |5| <<<<<<<<<<<<<<<<<<<<  TEXT CONTENT  >>>>>>>>>>>>>>>>>>>>>>> */
 
+h1, h2, h3{
+  text-transform: uppercase;
+}
+.jumbotron h1{
+  color: #fff;
+}
+.jumbotron h4{
+  color: #cecece;
+}
 p.instructions{
   width: 300px;
   height:auto;
@@ -94,7 +124,10 @@ li.read-more p{
   vertical-align: middle;
   text-align: center;
 }
+li.read-more:hover{
+  color: #fe5652;
 
+}
 
 /* |6| <<<<<<<<<<<<<<<<<<<<  LISTS  >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -111,7 +144,8 @@ ul.list-inline p{
   font-size: .95em;
 }
 ul.list-inline a:hover{
-  color: rgba(255,40,13,1);
+  /*color: rgba(255,40,13,1);*/
+  color:#fe5652;
   text-decoration: none;
 }
  li a{
@@ -121,7 +155,7 @@ li.read-more:hover{
   cursor: pointer;
 }
 .jumbotron.visible .list-inline{
-  color: #777;
+  color: #fe5652;
 }
 
 
@@ -134,11 +168,14 @@ div.arrow-down{
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #fff;
+
 }
 a span.glyphicon-menu-down{
   margin-top: 125px;
-  color: #fff;
+  color:#fe5652;
   position: relative;
+  -webkit-animation: bounce 1s infinite alternate;
+  animation: bounce 1s infinite alternate;
 }
 a span.glyphicon-new-window {
   margin-left: 10px;
@@ -174,18 +211,12 @@ div.img-outer-text{
   color: #777;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  /*-webkit-flex-display: flex;
-  display: flex;
-  -moz-flex-display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;*/
 }
 div.img-outer-text span.divider{
   border-right: 2px solid #777;
   margin: 0 10px 0 10px;
 }
 div.img-container {
-  /*display: flex;*/
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -224,7 +255,6 @@ img.img-responsive{
   margin: 0;
   padding: 0;
   z-index: 1;
-  /*flex-shrink: 0;*/
   min-width: 140%;
   min-height: 100%
 }
@@ -232,12 +262,55 @@ img.img-responsive{
 
 /* |9| <<<<<<<<<<<<<<<<<<<<<<<<<<<  ANIMATIONS  >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-.animated.infinite{
-  webkit-animation-duration: 4s;
-  animation-duration: 4s;
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
 
-
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes open {
+  0%   {opacity: 0; }
+  25%  {opacity: .25;}
+  50%  {opacity: .50;}
+  75%  {opacity: .75;}
+  100% {opacity: 1;}
+}
+/* Standard syntax */
+@keyframes open {
+  0%   {opacity: 0; }
+  25%  {opacity: .25;}
+  50%  {opacity: .50;}
+  75%  {opacity: .75;}
+  100% {opacity: 1;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes closein {
+  0%   {opacity: 1; }
+  25%  {opacity: .75;}
+  50%  {opacity: .50;}
+  75%  {opacity: .25;}
+  100% {opacity: 0;}
+}
+/* Standard syntax */
+@keyframes closein {
+  0%   {opacity: 1; }
+  25%  {opacity: .75;}
+  50%  {opacity: .50;}
+  75%  {opacity: .25;}
+  100% {opacity: 0;}
+}
 /* |10| <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  FOOTER  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 footer.footer{
@@ -254,7 +327,13 @@ footer.footer{
 
 
   /* |1| <<<<<<<<<<<<<<<<<  CONTAINERS  >>>>>>>>>>>>>>>>>> */
-
+  .jumbotron.visible{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    bottom:0;
+    right:0;
+  }
   /* Fill the whole screen */
   div.col-lg-3.col-md-4.col-xs-6 {
     width: 100%;
