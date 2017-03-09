@@ -272,8 +272,8 @@ img.img-responsive{
   margin: 0;
   padding: 0;
   z-index: 1;
-  min-width: 140%;
-  min-height: 100%
+  min-width: 160%;
+  height: auto;
 }
 
 
@@ -372,23 +372,22 @@ footer.footer{
   }
 
 
-  /* |5| <<<<<<<<<<<<<<<<<<<<  TEXT CONTENT  >>>>>>>>>>>>>>>>>>>>>>> */
+  /* |5| <<<<<<<<<<<<<<<<<<<<  TEXT CONTENT  >>>>>>>>>>>>>>>>>> */
 
   .jumbotron h1.page-header{
     font-size: 5em;
     text-align: center;
   }
   .jumbotron.visible ul.list-inline h4{
-    margin-bottom: 50px;
+    margin: 50px;
     font-size: 1.65em;
   }
 
 
-  /* |8| <<<<<<<<<<<<<<<<<<<<<<<<<<<  IMAGE GALLERY CONTAINERS >>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* |8| <<<<<<<<<<<<<<<<<<<<  IMAGE GALLERY CONTAINERS >>>>>>>>>>>>>>>> */
 
   div.img-outer-text, img.img-responsive{
     display: block;
-    /*padding: 20px;*/
   }
   div.img-outer-text .list-inline{
     padding: 10px;
