@@ -8,7 +8,7 @@
       },
 
       updateYearOnPage: function(){
-        document.getElementById("date").innerHTML = "© Polyverge "+module.year();
+        document.getElementById("date").innerHTML = "© POLYVERGE "+module.year();
       },
 
       // Logic for toggling container
