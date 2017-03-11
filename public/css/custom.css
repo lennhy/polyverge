@@ -417,11 +417,6 @@ footer.footer ul.list-inline li.text-muted{
     padding: 10px;
     font-size: .85em;
   }
-  div.img-outer-text span.divider{
-    display: block;
-    border-right: none;
-    padding: 10px;
-  }
   div.col-lg-3.col-md-4.col-xs-6 div.img-container{
     width:75%;
     padding:0;
@@ -429,11 +424,11 @@ footer.footer ul.list-inline li.text-muted{
   }
   div.img-container span.img-title-description{
     position: relative;
-    width:100%;
+    width: 100%;
     height: 150px;
-    padding: 0;
-    margin:0;
-    font-size: .75em;
+    margin: 0;
+    padding: 10px;
+    font-size: .55em;
   }
   div.jumbotron.visible{
     position:fixed;
