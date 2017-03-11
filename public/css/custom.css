@@ -33,7 +33,6 @@ body{
   padding: 100px;
 }
 .jumbotron.visible{
-  position: fixed;
   top:0;
   right:0;
   width: 75%;
@@ -147,6 +146,7 @@ ul.list-inline a{
 }
 ul.list-inline li{
   color: #777;
+  padding-left: 10px;
 }
 ul.list-inline p{
   font-size: .95em;
@@ -372,17 +372,32 @@ footer.footer{
     overflow-x: visible;
   }
    h1.page-header{
-    font-size: 2em;
+    font-size: 3em;
     margin-left:0;
     margin-right: 0;
     text-align: center;
   }
   .jumbotron.visible ul.list-inline h4{
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 25px;
     font-size: 1em;
   }
   h2.description{
     font-size: 1em;
+    width:75%;
+    margin: 0 auto;
+  }
+  a.navbar-brand{
+    font-size: .65em;
+  }
+  span.img-title-description h2,   span.img-title-description p{
+    padding-top:10px;
+  }
+  div.img-outer-text {
+    width: 75%;
+  }
+  ul.list-inline p{
+    font-size: .75em;
   }
 
   /* |8| <<<<<<<<<<<<<<<<<<<<  IMAGE GALLERY CONTAINERS >>>>>>>>>>>>>>>> */
@@ -392,7 +407,7 @@ footer.footer{
   }
   div.img-outer-text .list-inline{
     padding: 10px;
-    font-size: .75em;
+    font-size: .65em;
   }
   div.col-lg-3.col-md-4.col-xs-6 div.img-container{
     width:75%;
@@ -407,18 +422,10 @@ footer.footer{
     margin:0;
     font-size: .75em;
   }
-  span.img-title-description h2,   span.img-title-description p{
-    padding-top:10px;
-  }
-  div.img-outer-text {
-    width: 75%;
-  }
   div.jumbotron.visible{
     position:fixed;
   }
-  ul.list-inline p{
-    font-size: .75em;
-  }
+
   footer.footer{
     font-size: .50em;
   }
