@@ -155,7 +155,6 @@ ul.list-inline p{
   font-size: .95em;
 }
 ul.list-inline a:hover{
-  /*color: rgba(255,40,13,1);*/
   color:#fe5652;
   text-decoration: none;
 }
@@ -225,6 +224,7 @@ div.img-outer-text{
   letter-spacing: .085em;
   text-transform: uppercase;
 }
+/*vertical line*/
 div.img-outer-text span.divider{
   border-right: 2px solid #dbc7c7;
   margin: 0 10px 0 10px;
@@ -415,7 +415,12 @@ footer.footer ul.list-inline li.text-muted{
   }
   div.img-outer-text .list-inline{
     padding: 10px;
-    font-size: .65em;
+    font-size: .85em;
+  }
+  div.img-outer-text span.divider{
+    display: block;
+    border-right: none;
+    padding: 10px;
   }
   div.col-lg-3.col-md-4.col-xs-6 div.img-container{
     width:75%;
