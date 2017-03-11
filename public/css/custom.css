@@ -258,7 +258,7 @@ div.img-container:hover .img-title-description{
   padding: 70px 30px 100px 30px;
 }
 .img-title-description:hover {
-  background:rgba(255,40,13,.9);
+  background-color:rgba(255,40,13,.7);
 }
 div.img-container .text:hover{
   visibility: visible;
