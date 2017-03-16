@@ -85,10 +85,13 @@ body{
 /* |3| <<<<<<<<<<<<<<<<<<  NAVIGATION  >>>>>>>>>>>>>>>>>>>>>>>> */
 
 nav.navbar.navbar-inverse {
-  background: transparent;
+  background: rgb(10,10,10);
+  position: fixed;
   border-radius: 0;
+  width: 100%;
   border: none;
   margin-bottom:0;
+  z-index: 3;
 }
 
 
@@ -188,7 +191,7 @@ a span.glyphicon-menu-down{
   animation: bounce 1s infinite alternate;
 }
 a span.glyphicon-new-window {
-  margin-left: 10px;
+  padding-left: 10px;
 }
 span.glyphicon-remove{
   position: absolute;
@@ -209,6 +212,9 @@ a.navbar-brand > img{
   height: auto;
   font-family: 'Oswald', sans-serif;
 }
+.navbar-inverse .navbar-brand{
+    color: #fff;
+}
 div.img-outer-text{
   text-align: center;
   position: relative;
@@ -216,7 +222,7 @@ div.img-outer-text{
   font-size: .65em;
   width: 300px;
   height: auto;
-  padding: 10px;
+  padding: 20px;
   /*background: rgb(18,18,18);*/
   box-shadow: 1px 1px 5px #000;
   border-bottom-right-radius: 4px;
@@ -257,7 +263,7 @@ div.img-container:hover .img-title-description{
 .img-title-description{
   padding: 70px 30px 100px 30px;
 }
-.img-title-description:hover {
+.img-container > .img-title-description:hover {
   background-color:rgba(255,40,13,.7);
 }
 div.img-container .text:hover{
@@ -400,7 +406,8 @@ footer.footer ul.list-inline li.text-muted{
     padding-top:10px;
   }
   div.img-outer-text {
-    width: 100%;
+    width: 80%;
+    font-size: .85em;
   }
   ul.list-inline p{
     font-size: .75em;
@@ -427,12 +434,12 @@ footer.footer ul.list-inline li.text-muted{
     height: 80%;
   }
   div.img-container span.img-title-description {
-      position: absolute;
-      width: 80%;
-      height: 86.5%;
-      /* padding: 20px; */
-      margin: 0;
-      font-size: .75em;
+    position: absolute;
+    width: 80%;
+    height: 82%;
+    /* padding: 20px; */
+    margin: 0;
+    font-size: .75em;
   }
   div.jumbotron.visible{
     position:fixed;
