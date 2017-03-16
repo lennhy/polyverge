@@ -90,7 +90,6 @@ nav.navbar.navbar-inverse {
   border-radius: 0;
   width: 100%;
   border: none;
-  margin-bottom:0;
   z-index: 3;
 }
 
@@ -105,6 +104,7 @@ h1.page-header{
   text-transform: uppercase;
   font-size: 10em;
   border: none;
+  margin-top: 100px;
   letter-spacing: .0em;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
@@ -132,15 +132,6 @@ p.instructions{
   font-size: .65em;
   color:#fff;
 }
-li.read-more p{
-  font-size: .75em;
-  vertical-align: middle;
-  text-align: center;
-}
-li.read-more:hover{
-  color: #fe5652;
-
-}
 
 /* |6| <<<<<<<<<<<<<<<<<<<<  LISTS  >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -163,6 +154,14 @@ ul.list-inline a:hover{
 }
  li a{
   color: #fff;
+}
+li.read-more p{
+  font-size: .75em;
+  vertical-align: middle;
+  text-align: center;
+}
+li.read-more:hover{
+  color: #fe5652;
 }
 li.read-more:hover{
   cursor: pointer;
