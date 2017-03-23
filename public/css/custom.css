@@ -110,7 +110,7 @@ h1.page-header{
   font-weight: bold;
 }
 h2.description{
-  font-size: 1.25em;
+  font-size: 1.75em;
   letter-spacing: .095em;
   color: #fe5652;
   font-family: 'Oswald', sans-serif;
@@ -234,13 +234,13 @@ div.img-outer-text span.divider{
   margin: 0 10px 0 10px;
 }
 div.img-container {
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;*/
+  /*align-items: center;*/
   overflow: hidden;
   margin: 20px 0 0 0;
   width: 300px;
   height: 300px;
-  object-fit: contain;
+  /*object-fit: contain;*/
 }
 .img-title-description{
   display: none;
@@ -394,7 +394,6 @@ footer.footer ul.list-inline li.text-muted{
     font-size: 1em;
   }
   h2.description{
-    font-size: 1em;
     width:75%;
     margin: 0 auto;
   }
