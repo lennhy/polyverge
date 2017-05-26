@@ -103,8 +103,8 @@ h1.page-header{
   font-size: 10em;
   border: none;
   margin-top: 100px;
-  letter-spacing: .0em;
-  font-family: 'Oswald', sans-serif;
+  letter-spacing: .025em;
+  font-family: 'Anton', sans-serif;
   font-weight: bold;
 }
 h2.description{
@@ -207,7 +207,7 @@ span.glyphicon-remove:hover{
 a.navbar-brand > img{
   width:50px;
   height: auto;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Anton', sans-serif;
 }
 .navbar-inverse .navbar-brand{
     color: #fff;
