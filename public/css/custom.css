@@ -370,6 +370,8 @@ footer.footer ul.list-inline li.text-muted{
   }
   div.col-lg-3.col-md-4.col-xs-6{
     margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .jumbotron{
     padding: 10px;
@@ -395,7 +397,9 @@ footer.footer ul.list-inline li.text-muted{
   }
   h2.description{
     width:75%;
+    font-size: 1.25em;
     margin: 0 auto;
+    margin: 40px auto;
   }
   a.navbar-brand{
     font-size: .65em;
