@@ -277,6 +277,8 @@ img.img-responsive{
 
 /* |9| <<<<<<<<<<<<<<<<<<<<<<<<<<<  ANIMATIONS  >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* <<<<<<<<<<<<<< BOUNCE */
+
 @keyframes bounce {
   from {
     transform: translateY(0px);
@@ -293,6 +295,8 @@ img.img-responsive{
     transform: translateY(-15px);
   }
 }
+
+/* <<<<<<<<<<<<<< OPEN & CLOSE */
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes open {
@@ -327,6 +331,16 @@ img.img-responsive{
   100% {opacity: 0;}
 }
 
+/* <<<<<<<<<<<<<< EXPAND FROM NOTHING */
+
+/* Standard syntax */
+@keyframes expand {
+  0%   {width: 1; }
+  25%  {opacity: .75;}
+  50%  {opacity: .50;}
+  75%  {opacity: .25;}
+  100% {opacity: 0;}
+}
 
 /* |10| <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  FOOTER  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
