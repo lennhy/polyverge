@@ -27,9 +27,10 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 .jumbotron{
-  margin: 0;
-  background: transparent;
-  padding: 100px;
+  margin: 0 0 60px 0;
+  border-bottom: 1px solid #e5e5e5;
+  background: rgba(255,255,255,0.6);
+  padding-top: 130px;
 }
 .jumbotron.visible{
   top:0;
@@ -83,7 +84,7 @@ body{
 /* |3| <<<<<<<<<<<<<<<<<<  NAVIGATION  >>>>>>>>>>>>>>>>>>>>>>>> */
 
 nav.navbar.navbar-inverse {
-  background: rgb(10,10,10);
+  background: rgb(10,10,30);
   position: fixed;
   border-radius: 0;
   width: 100%;
@@ -98,35 +99,43 @@ nav.navbar.navbar-inverse {
   color: #fff;
 }
 h1.page-header{
+  font-size: 1.5em;
   color: #fff;
   text-transform: uppercase;
-  font-size: 2em;
   border: none;
   margin-top:0px;
   letter-spacing: .025em;
   font-family: 'Oswald', sans-serif;
 }
-h2.description{
-  font-size:2em;
+
+/* |5| <<<<<<<<<<<<<<<<<<<<  TEXT CONTENT  >>>>>>>>>>>>>>>>>>>>>>> */
+
+.description{
+  text-align: left;
+  color: #777;
+}
+.gallery-img-text{
+  font-size: 1.13em;
+}
+h4.description{
+  font-size:1.5em;
   letter-spacing: -.001em;
-  color: #333;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
   width: 800px;
   margin: 0 auto;
-  margin-top: 60px;
   line-height: 1.36em;
+  text-align: center;
 }
-
-/* |5| <<<<<<<<<<<<<<<<<<<<  TEXT CONTENT  >>>>>>>>>>>>>>>>>>>>>>> */
-
+.description-header, h4.description{
+  color: #333;
+  font-size: 1.2em;
+}
 .text-muted, #date{
   font-size: 1em;
   letter-spacing: .075em;
 }
-.jumbotron h4{
-  color: #cecece;
-}
+
 p.instructions{
   margin-top: 100px;
   margin: 0 auto;
@@ -137,9 +146,11 @@ p.instructions{
 
 /* |6| <<<<<<<<<<<<<<<<<<<<  LISTS  >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+
 ul.list-inline{
   padding:10px 10px 0 10px;
   color: #777;
+  margin-bottom: 20px;
 }
 ul.list-inline a{
   color: #777;
@@ -157,8 +168,8 @@ ul.list-inline a:hover{
  li a{
   color: #fff;
 }
-li.read-more p{
-  font-size: .75em;
+li.read-more {
+  /* font-size: .75em; */
   vertical-align: middle;
   text-align: center;
 }
@@ -174,6 +185,11 @@ li.read-more:hover{
 
 
 /* |7| <<<<<<<<<<<<<<<<<<<<  IMAGE ICONS  >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.col-lg-3{
+  margin:0;
+  width: 315px;
+}
 
 div.arrow-down{
   width: 0;
@@ -215,58 +231,35 @@ a.navbar-brand > img{
 .navbar-inverse .navbar-brand{
     color: #fff;
 }
+.navbar-brand{
+  padding-bottom: 45px;
+  line-height: 20px;
+}
 div.img-outer-text{
   text-align: center;
   position: relative;
   top:0px;
   font-size: .65em;
-  width: 300px;
+  width: 275px;
   height: auto;
   padding: 20px;
   background: #fff;
-  /*background: rgb(18,18,18);*/
   box-shadow: 1px 1px 5px rgb(214, 214, 214);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   letter-spacing: .085em;
-  text-transform: uppercase;
 }
 div.img-outer-text span.divider{
   border-right: 2px solid #777;
   margin: 0 10px 0 10px;
 }
 div.img-container {
-  /*justify-content: center;*/
-  /*align-items: center;*/
   overflow: hidden;
-  margin: 20px 0 0 0;
-  width: 300px;
-  height: 300px;
-  /*object-fit: contain;*/
+  margin: 0px 0 0 0;
+  width: 275px;
+  height: auto;
 }
-.img-title-description{
-  display: none;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  text-align: center;
-  vertical-align: middle;
-  color: #fff;
-  z-index: 1;
-}
-div.img-container .img-title-description p{
-  font-size: 1em;
-}
-div.img-container:hover .img-title-description{
-  display: block;
-  cursor: pointer;
-}
-.img-title-description{
-  padding: 70px 30px 100px 30px;
-}
-.img-container > .img-title-description:hover {
-  background-color:rgba(255,40,13,.7);
-}
+
 div.img-container .text:hover{
   visibility: visible;
 }
@@ -274,7 +267,7 @@ img.img-responsive{
   margin: 0;
   padding: 0;
   z-index: 1;
-  min-width: 200%;
+  width: 100%;
   height: auto;
 }
 
@@ -412,16 +405,10 @@ footer.footer ul.list-inline li.text-muted{
     font-size: 1em;
   }
 
-  h2.description{
-    width:75%;
-    font-size: 1.25em;
-  }
   a.navbar-brand{
     font-size: .65em;
   }
-  span.img-title-description h2,   span.img-title-description p{
-    padding-top:10px;
-  }
+
   div.img-outer-text {
     width: 80%;
     font-size: .85em;
@@ -450,14 +437,7 @@ footer.footer ul.list-inline li.text-muted{
     padding:0;
     height: 80%;
   }
-  div.img-container span.img-title-description {
-    position: absolute;
-    width: 80%;
-    height: 82%;
-    /* padding: 20px; */
-    margin: 0;
-    font-size: .75em;
-  }
+
   div.jumbotron.visible{
     position:fixed;
   }
