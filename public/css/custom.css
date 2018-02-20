@@ -121,17 +121,19 @@ h4.description{
   font-size:1.5em;
   letter-spacing: -.001em;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   width: 800px;
   margin: 0 auto;
   line-height: 1.36em;
   text-align: center;
+  color: #4A4A4A;
 }
-.description-header, h4.description{
+.description-header{
   color: #333;
 }
 .description-header{
   font-size: 1em;
+  font-weight: 600;
 }
 .header{
   margin: 0;
