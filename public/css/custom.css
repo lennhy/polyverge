@@ -129,7 +129,9 @@ h4.description{
 }
 .description-header, h4.description{
   color: #333;
-  font-size: 1.2em;
+}
+.description-header{
+  font-size: 1em;
 }
 .text-muted, #date{
   font-size: 1em;
@@ -382,9 +384,9 @@ footer.footer ul.list-inline li.text-muted{
     margin-left: 5px;
     margin-right: 5px;
   }
-  .jumbotron{
+  /* .jumbotron{
     padding: 10px;
-  }
+  } */
 
 
   /* |5| <<<<<<<<<<<<<<<<<<<<  TEXT CONTENT  >>>>>>>>>>>>>>>>>> */
@@ -392,6 +394,9 @@ footer.footer ul.list-inline li.text-muted{
   body{
     margin:0;
     overflow-x: visible;
+  }
+  h4.description{
+    width: 300px;
   }
   .jumbotron h1.page-header{
     font-size: 3em;
