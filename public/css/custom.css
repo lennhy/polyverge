@@ -30,8 +30,14 @@ body{
   margin: 0 0 60px 0;
   border-bottom: 1px solid #e5e5e5;
   background: rgba(255,255,255,0.6);
-  padding: 80px 0 25px 0;
+
 }
+
+.header{
+  margin: 0;
+  padding: 0;
+}
+
 .jumbotron.visible{
   top:0;
   right:0;
@@ -109,7 +115,14 @@ h1.page-header{
   border: none;
   letter-spacing: .025em;
   font-family: 'Oswald', sans-serif;
+  transform: scale(1,1);
+   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+   animation-name: example;
+   animation-duration: 6s;
 }
+
+
 
 /* |5| <<<<<<<<<<<<<<<<<<<<  TEXT CONTENT  >>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -130,6 +143,8 @@ h4.description{
   line-height: 1.36em;
   text-align: center;
   color: #4A4A4A;
+  margin-bottom: 60px;
+
 }
 .description-header{
   color: #333;
@@ -274,7 +289,7 @@ div.img-container {
 div.img-container .text:hover{
   visibility: visible;
 }
-/* 
+/*
 gallery-img-text col-lg-3 col-md-4 col-xs-6 .hover{
   box-shadow: 0px;
 } */
@@ -290,6 +305,41 @@ img.img-responsive{
 
 
 /* |9| <<<<<<<<<<<<<<<<<<<<<<<<<<<  ANIMATIONS  >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<< SCALE AND ROTATE*/
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes flicker {
+      animation-timing-function: ease-in-out;
+      0% {background: #fff; }
+      /* 20% {background: #E3EFFF; } */
+      /* 40% {background: #2F78E8; } */
+      /* 60% {background: #FFD140; } */
+      /* 80% {background: #37B56D; } */
+      100% {background: #000; }
+}
+
+/* Standard syntax */
+@keyframes flicker {
+      animation-timing-function: ease-in-out;
+      0% {background: #fff; }
+      /* 20% {background: #E3EFFF; } */
+      /* 40% {background: #2F78E8; } */
+      /* 60% {background: #FFD140; } */
+      /* 80% {background: #37B56D; } */
+      100% {background: #000; }
+}
+
+@-webkit-keyframes example {
+      0% {transform: scale(.8,.8); animation-timing-function: ease-in-out;  /* IE 9 */}
+      100% {transform: scale(1,1); opacity: 1; color: #000;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {transform: scale(.8,.8); animation-timing-function: ease-in-out; color: transparent;/* IE 9 */}
+    100% {transform: scale(1,1); opacity: 1; color: #000; }
+}
+
 
 /* <<<<<<<<<<<<<< BOUNCE */
 
@@ -413,11 +463,15 @@ footer.footer ul.list-inline li.text-muted{
   h4.description{
     width: 300px;
   }
+
   .jumbotron h1.page-header{
     font-size: 3em;
     margin-left:0;
     margin-right: 0;
     text-align: center;
+
+  }
+  .under-header{
   }
   .jumbotron.visible ul.list-inline h4{
     margin-top: 50px;
