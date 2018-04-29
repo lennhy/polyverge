@@ -25,6 +25,7 @@ body{
   font-size: 16px;
   letter-spacing: .045em;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
 }
 
 .jumbotron{
@@ -238,7 +239,7 @@ h1.page-header{
 }
 h4.description{
   font-size:1.5em;
-  letter-spacing: .05em;
+  letter-spacing: .08em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   width: 800px;
