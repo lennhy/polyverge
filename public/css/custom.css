@@ -28,7 +28,7 @@ body{
 }
 
 .jumbotron{
-  padding: 180px;
+  padding: 180px 0 180px 0;
   /* border-bottom: 1px solid #e5e5e5; */
   /* background: rgba(35,170,144,1); */
   background: #000;
@@ -568,6 +568,7 @@ footer.footer ul.list-inline li.text-muted{
   }
   h4.description{
     width: 300px;
+    font-size: 1em;
   }
 
   .jumbotron h1.page-header{
