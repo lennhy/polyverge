@@ -1,5 +1,5 @@
 "use strict";
-var showDetail = function(){
+const showDetail = function(){
 
   // private function
   function year(){
